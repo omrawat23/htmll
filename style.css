@@ -1,0 +1,212 @@
+@font-face {
+  font-family: gilroy;
+  src: url(./fonts/Gilroy-Regular.otf);
+}
+@font-face {
+  font-family: Helvetica;
+  src: url(./fonts/HelveticaNowDisplay-Regular.otf);
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+
+#loader {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 999999;
+}
+#loader #box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#loader .circle {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  border-radius: 50%;
+}
+#menu {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 999;
+}
+#menu #one {
+  width: 100%;
+  height: 0;
+  background-color: black;
+}
+#menu #two {
+  width: 100%;
+  height: 0;
+  position: absolute;
+  top: -10%;
+  background-color: #181818;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#menu #two #title {
+  width: 80%;
+  height: 100%;
+
+  margin-top: 6%;
+}
+#menu #two #title button {
+  width: 100%;
+  height: 14%;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#menu #two #title button:nth-child(even) {
+  justify-content: flex-end;
+}
+
+#menu #two #title button .text {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-family: gilroy;
+  position: relative;
+}
+#menu #two #title button .text::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
+#menu #two #title button .text .number {
+  width: 80px;
+  height: 80px;
+  /* border: 2px solid white; */
+  font-size: 2vw;
+  border-radius: 50%;
+}
+#menu #two #title button .text .name {
+  width: 90%;
+  height: 80px;
+  font-size: 2.5vw;
+  text-align: left;
+  display: flex;
+  align-items: start;
+}
+#main {
+  position: relative;
+  overflow: hidden;
+}
+#navbar #name h1 {
+  font-family: gilroy;
+  height: max-content;
+  font-size: 2vw;
+  line-height: 1;
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  color: gray;
+  z-index: 99;
+  mix-blend-mode: difference;
+}
+#navbar #menutext button {
+  font-family: gilroy;
+  font-size: 1.5vw;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  z-index: 9999;
+  color: gray;
+  mix-blend-mode: difference;
+}
+#page1 {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 990;
+}
+#page1 #scroll h3 {
+  font-family: gilroy;
+  font-size: 3vw;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  text-transform: capitalize;
+}
+#page1 #heading h1 {
+  font-size: 19vw;
+  font-family: gilroy;
+  line-height: 0.7;
+}
+#page1 #heading span {
+  display: inline-block;
+}
+#page1 #photo {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 50px;
+  right: 100px;
+}
+#page1 #photo img {
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  height: 100%;
+}
+
+#page2 {
+  widows: 100%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#page2 {
+  font-family: gilroy;
+  font-size: 1vw;
+}
